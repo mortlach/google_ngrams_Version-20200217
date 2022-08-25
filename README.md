@@ -1,4 +1,4 @@
-# Method
+# Method For 1-grams
 ## get all 1 grams converted to lower case 
 ## choose those with:
 ### no part with postag = \_NOUN,\_VERB,\_ADJ,\_ADV,\_PRON,\_DET,\_ADP,\_NUM,\_CONJ,\_PRT,\_ROOT,\_START,\_END,\_.,\_X  
