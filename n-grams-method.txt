@@ -1,4 +1,4 @@
-Method For 1-grams
+Method For N-grams
 For in files found in below links select ngrams that,
 only contain words in pre-computed 1-gram lists
 AND

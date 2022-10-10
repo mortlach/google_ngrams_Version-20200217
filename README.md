@@ -11,7 +11,7 @@
 ### words in nltk.corpus.inaugural.words() dictionary
 ### words in nltk.corpus.words.words() dictionary
 
-# Method For 1-grams
+# Method For N-grams
 ## For in files found in below links select ngrams that,
 ## only contain words in pre-computed 1-gram lists
 ## AND
