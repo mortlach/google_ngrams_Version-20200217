@@ -10,3 +10,13 @@
 ### words in nltk.corpus.brown.words() dictionary
 ### words in nltk.corpus.inaugural.words() dictionary
 ### words in nltk.corpus.words.words() dictionary
+
+# Method For 1-grams
+## For in files found in below links select ngrams that,
+## only contain words in pre-computed 1-gram lists
+## AND
+## have a rune word length that matches words in an LP sentence. 
+##http://storage.googleapis.com/books/ngrams/books/20200217/eng/eng-2-ngrams_exports.html
+##http://storage.googleapis.com/books/ngrams/books/20200217/eng/eng-3-ngrams_exports.html
+##http://storage.googleapis.com/books/ngrams/books/20200217/eng/eng-4-ngrams_exports.html
+##http://storage.googleapis.com/books/ngrams/books/20200217/eng/eng-5-ngrams_exports.html
