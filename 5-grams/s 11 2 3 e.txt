@@ -1,0 +1,14 @@
+_start_ maintenance of way _end_ 2094
+_start_ improvement of bay _end_ 359
+_start_ construction of act _end_ 315
+_start_ temperature of air _end_ 270
+_start_ temperature of bath _end_ 137
+_start_ distribution by sex _end_ 126
+_start_ introduction to law _end_ 104
+_start_ enforcement of law _end_ 90
+_start_ introduction to art _end_ 63
+_start_ enforcement of act _end_ 62
+_start_ overpayment of tax _end_ 58
+_start_ relationship to head _end_ 52
+_start_ restrictions on use _end_ 50
+_start_ declarations of war _end_ 44
