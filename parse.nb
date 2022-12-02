@@ -1,0 +1,222 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7610,        214]
+NotebookOptionsPosition[      6343,        183]
+NotebookOutlinePosition[      6778,        200]
+CellTagsIndexPosition[      6735,        197]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"FS", "=", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<s 3.txt\>\"", ",", "\"\<3 12.txt\>\"", ",", "\"\<12 4.txt\>\""}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Import", "[", 
+      RowBox[{
+      "\"\<E:\\\\google_ngrams_Version-20200217\\\\2-grams\\\\\>\"", "<>", 
+       "#"}], "]"}], "&"}], "/@", "FS"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.874587574372916*^9, 3.8745875771896496`*^9}, {
+  3.874587661228055*^9, 3.8745876853565807`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"5ba7e3ba-69ac-4f7f-b674-d4b37618a595"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"s 3.txt\"\>", ",", "\<\"3 12.txt\"\>", 
+   ",", "\<\"12 4.txt\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.874587685576914*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"b75a08c6-8739-4856-a8bc-c85256526402"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"data", "\[LeftDoubleBracket]", "1", 
+  "\[RightDoubleBracket]"}]], "Input",
+ CellLabel->"",ExpressionUUID->"77a0fb99-2ee4-41a0-b478-d55c7762a526"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<c:\\\\\\\\temp\\\\s_3.csv\>\"", ",", 
+   RowBox[{"StringRiffle", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringRiffle", "[", 
+        RowBox[{"#", ",", "\"\<,\>\""}], "]"}], "&"}], "/@", 
+      RowBox[{"Partition", "[", 
+       RowBox[{
+        RowBox[{"StringSplit", "@", 
+         RowBox[{
+         "data", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}]}], 
+        ",", "3"}], "]"}]}], ",", "\"\<\\n\>\""}], "]"}], ",", 
+   "\"\<text\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<c:\\\\\\\\temp\\\\3_12.csv\>\"", ",", 
+   RowBox[{"StringRiffle", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringRiffle", "[", 
+        RowBox[{"#", ",", "\"\<,\>\""}], "]"}], "&"}], "/@", 
+      RowBox[{"Partition", "[", 
+       RowBox[{
+        RowBox[{"StringSplit", "@", 
+         RowBox[{
+         "data", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}]}], 
+        ",", "3"}], "]"}]}], ",", "\"\<\\n\>\""}], "]"}], ",", 
+   "\"\<text\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<c:\\\\\\\\temp\\\\12_4.csv\>\"", ",", 
+   RowBox[{"StringRiffle", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"StringRiffle", "[", 
+        RowBox[{"#", ",", "\"\<,\>\""}], "]"}], "&"}], "/@", 
+      RowBox[{"Partition", "[", 
+       RowBox[{
+        RowBox[{"StringSplit", "@", 
+         RowBox[{
+         "data", "\[LeftDoubleBracket]", "3", "\[RightDoubleBracket]"}]}], 
+        ",", "3"}], "]"}]}], ",", "\"\<\\n\>\""}], "]"}], ",", 
+   "\"\<text\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.874587686624111*^9, 3.8745879246594305`*^9}, {
+  3.8745879630585485`*^9, 
+  3.874587978056033*^9}},ExpressionUUID->"c5938be4-0168-4e61-9449-\
+e123078bffe8"],
+
+Cell[BoxData["\<\"c:\\\\\\\\temp\\\\s_3.csv\"\>"], "Output",
+ CellChangeTimes->{{3.8745879053347597`*^9, 3.8745879250603933`*^9}},
+ CellLabel->"Out[22]=",ExpressionUUID->"2c88c0cb-bd2b-44cc-9641-e7fcd1284712"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.874587583118492*^9, 3.8745876197510877`*^9}, 
+   3.8745876845153913`*^9},ExpressionUUID->"192e8abd-b4d7-414c-9667-\
+6defb7f2054b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"s 3.txt\"\>", ",", "\<\"3 12.txt\"\>", 
+   ",", "\<\"12 4.txt\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.874587672971423*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"244f2076-7879-498a-921c-916a8f2e48df"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{"data2", "=", 
+    RowBox[{"GatherBy", "[", 
+     RowBox[{
+      RowBox[{"SortBy", "[", 
+       RowBox[{
+        RowBox[{
+        "Import", "[", 
+         "\"\<E:\\\\cic\\\\c++\\\\Qt\\\\GNGPicker\\\\data\\\\n_grams\\\\s_3.\
+csv\>\"", "]"}], ",", 
+        RowBox[{
+         RowBox[{"#", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}], 
+         "&"}]}], "]"}], ",", 
+      RowBox[{
+       RowBox[{"#", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}], 
+       "&"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+   RowBox[{"data3", "=", 
+    RowBox[{"StringRiffle", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"StringRiffle", "[", 
+         RowBox[{"#", ",", "\"\<,\>\""}], "]"}], "&"}], "/@", 
+       RowBox[{"Reverse", "[", 
+        RowBox[{"SortBy", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"\"\<_start_\>\"", ",", 
+              RowBox[{"#", "\[LeftDoubleBracket]", 
+               RowBox[{"1", ",", "2"}], "\[RightDoubleBracket]"}], ",", 
+              RowBox[{"Total", "[", 
+               RowBox[{"ToExpression", "/@", 
+                RowBox[{"#", "\[LeftDoubleBracket]", 
+                 RowBox[{"All", ",", "3"}], "\[RightDoubleBracket]"}]}], 
+               "]"}]}], "}"}], "&"}], "/@", "data2"}], ",", "Last"}], "]"}], 
+        "]"}]}], ",", "\"\<\\n\>\""}], "]"}]}], ";", "\[IndentingNewLine]", 
+   RowBox[{"Export", "[", 
+    RowBox[{
+    "\"\<E:\\\\cic\\\\c++\\\\Qt\\\\GNGPicker\\\\data\\\\n_grams\\\\s_3.csv\>\"\
+", ",", "data3", ",", "\"\<Text\>\""}], "]"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.8746374319176254`*^9, 3.874637433141487*^9}, {
+  3.8746375046566076`*^9, 3.874637585469079*^9}, {3.874637855455616*^9, 
+  3.87463787502763*^9}},ExpressionUUID->"be8176bf-226d-431e-9144-\
+2b1e7011b345"],
+
+Cell[BoxData["\<\"E:\\\\cic\\\\c++\\\\Qt\\\\GNGPicker\\\\data\\\\n_grams\\\\s_\
+3.csv\"\>"], "Output",
+ CellChangeTimes->{{3.8746378619226475`*^9, 3.8746378694666405`*^9}},
+ CellLabel->"Out[27]=",ExpressionUUID->"aaa42ef5-6ccb-485e-9127-e2be30403eec"]
+}, Open  ]]
+},
+WindowSize->{1093.8, 612.6},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>0.9 Inherited,
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4c09f14a-4958-4d5f-8358-418b95e34567"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 612, 16, 43, "Input",ExpressionUUID->"5ba7e3ba-69ac-4f7f-b674-d4b37618a595"],
+Cell[1195, 40, 251, 5, 29, "Output",ExpressionUUID->"b75a08c6-8739-4856-a8bc-c85256526402"]
+}, Open  ]],
+Cell[1461, 48, 170, 3, 25, "Input",ExpressionUUID->"77a0fb99-2ee4-41a0-b478-d55c7762a526"],
+Cell[CellGroupData[{
+Cell[1656, 55, 1826, 49, 61, "Input",ExpressionUUID->"c5938be4-0168-4e61-9449-e123078bffe8"],
+Cell[3485, 106, 209, 2, 29, "Output",ExpressionUUID->"2c88c0cb-bd2b-44cc-9641-e7fcd1284712"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3731, 113, 179, 3, 25, "Input",ExpressionUUID->"192e8abd-b4d7-414c-9667-6defb7f2054b"],
+Cell[3913, 118, 251, 5, 29, "Output",ExpressionUUID->"244f2076-7879-498a-921c-916a8f2e48df"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4201, 128, 1872, 47, 61, "Input",ExpressionUUID->"be8176bf-226d-431e-9144-2b1e7011b345"],
+Cell[6076, 177, 251, 3, 29, "Output",ExpressionUUID->"aaa42ef5-6ccb-485e-9127-e2be30403eec"]
+}, Open  ]]
+}
+]
+*)
+
